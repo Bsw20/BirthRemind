@@ -7,23 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		302644902532EF2800AE0AF4 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026448F2532EF2800AE0AF4 /* UIColor + Extension.swift */; };
 		304BEDC22514F08D00E36754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304BEDC12514F08D00E36754 /* AppDelegate.swift */; };
 		304BEDC42514F08D00E36754 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304BEDC32514F08D00E36754 /* SceneDelegate.swift */; };
-		304BEDC62514F08D00E36754 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304BEDC52514F08D00E36754 /* ViewController.swift */; };
-		304BEDC92514F08D00E36754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304BEDC72514F08D00E36754 /* Main.storyboard */; };
 		304BEDCB2514F09000E36754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304BEDCA2514F09000E36754 /* Assets.xcassets */; };
 		304BEDCE2514F09000E36754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304BEDCC2514F09000E36754 /* LaunchScreen.storyboard */; };
+		30D64D4A2532FF2B00B016EC /* StartPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D64D492532FF2B00B016EC /* StartPresentationViewController.swift */; };
+		30D64D4F253300E900B016EC /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D64D4E253300E900B016EC /* UIButton + Extension.swift */; };
+		30D64D61253303C600B016EC /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D57253303C600B016EC /* OpenSans-Semibold.ttf */; };
+		30D64D62253303C600B016EC /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D58253303C600B016EC /* OpenSans-Light.ttf */; };
+		30D64D63253303C600B016EC /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D59253303C600B016EC /* OpenSans-Italic.ttf */; };
+		30D64D64253303C600B016EC /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D5A253303C600B016EC /* OpenSans-ExtraBold.ttf */; };
+		30D64D65253303C600B016EC /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D5B253303C600B016EC /* OpenSans-LightItalic.ttf */; };
+		30D64D66253303C600B016EC /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D5C253303C600B016EC /* OpenSans-Bold.ttf */; };
+		30D64D67253303C600B016EC /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D5D253303C600B016EC /* OpenSans-SemiboldItalic.ttf */; };
+		30D64D68253303C600B016EC /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D5E253303C600B016EC /* OpenSans-ExtraBoldItalic.ttf */; };
+		30D64D69253303C600B016EC /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D5F253303C600B016EC /* OpenSans-Regular.ttf */; };
+		30D64D6A253303C600B016EC /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D60253303C600B016EC /* OpenSans-BoldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3026448F2532EF2800AE0AF4 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
 		304BEDBE2514F08D00E36754 /* BirthRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirthRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		304BEDC12514F08D00E36754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		304BEDC32514F08D00E36754 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		304BEDC52514F08D00E36754 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		304BEDC82514F08D00E36754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		304BEDCA2514F09000E36754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		304BEDCD2514F09000E36754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		304BEDCF2514F09000E36754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30D64D492532FF2B00B016EC /* StartPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StartPresentationViewController.swift; path = BirthRemind/Presentation/StartPresentationViewController.swift; sourceTree = SOURCE_ROOT; };
+		30D64D4E253300E900B016EC /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
+		30D64D57253303C600B016EC /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		30D64D58253303C600B016EC /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		30D64D59253303C600B016EC /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		30D64D5A253303C600B016EC /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		30D64D5B253303C600B016EC /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		30D64D5C253303C600B016EC /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		30D64D5D253303C600B016EC /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		30D64D5E253303C600B016EC /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		30D64D5F253303C600B016EC /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		30D64D60253303C600B016EC /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +59,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		302644842532E9FE00AE0AF4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				30D64D492532FF2B00B016EC /* StartPresentationViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3026448E2532EED500AE0AF4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3026448F2532EF2800AE0AF4 /* UIColor + Extension.swift */,
+				30D64D4E253300E900B016EC /* UIButton + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		304BEDB52514F08D00E36754 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +95,41 @@
 		304BEDC02514F08D00E36754 /* BirthRemind */ = {
 			isa = PBXGroup;
 			children = (
+				30D64D55253303A400B016EC /* Fonts */,
 				304BEDC12514F08D00E36754 /* AppDelegate.swift */,
 				304BEDC32514F08D00E36754 /* SceneDelegate.swift */,
-				304BEDC52514F08D00E36754 /* ViewController.swift */,
-				304BEDC72514F08D00E36754 /* Main.storyboard */,
+				302644842532E9FE00AE0AF4 /* Presentation */,
+				3026448E2532EED500AE0AF4 /* Extensions */,
 				304BEDCA2514F09000E36754 /* Assets.xcassets */,
 				304BEDCC2514F09000E36754 /* LaunchScreen.storyboard */,
 				304BEDCF2514F09000E36754 /* Info.plist */,
 			);
 			path = BirthRemind;
+			sourceTree = "<group>";
+		};
+		30D64D55253303A400B016EC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				30D64D56253303C600B016EC /* opensans */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		30D64D56253303C600B016EC /* opensans */ = {
+			isa = PBXGroup;
+			children = (
+				30D64D57253303C600B016EC /* OpenSans-Semibold.ttf */,
+				30D64D58253303C600B016EC /* OpenSans-Light.ttf */,
+				30D64D59253303C600B016EC /* OpenSans-Italic.ttf */,
+				30D64D5A253303C600B016EC /* OpenSans-ExtraBold.ttf */,
+				30D64D5B253303C600B016EC /* OpenSans-LightItalic.ttf */,
+				30D64D5C253303C600B016EC /* OpenSans-Bold.ttf */,
+				30D64D5D253303C600B016EC /* OpenSans-SemiboldItalic.ttf */,
+				30D64D5E253303C600B016EC /* OpenSans-ExtraBoldItalic.ttf */,
+				30D64D5F253303C600B016EC /* OpenSans-Regular.ttf */,
+				30D64D60253303C600B016EC /* OpenSans-BoldItalic.ttf */,
+			);
+			path = opensans;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +189,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30D64D61253303C600B016EC /* OpenSans-Semibold.ttf in Resources */,
+				30D64D69253303C600B016EC /* OpenSans-Regular.ttf in Resources */,
+				30D64D67253303C600B016EC /* OpenSans-SemiboldItalic.ttf in Resources */,
 				304BEDCE2514F09000E36754 /* LaunchScreen.storyboard in Resources */,
+				30D64D66253303C600B016EC /* OpenSans-Bold.ttf in Resources */,
+				30D64D65253303C600B016EC /* OpenSans-LightItalic.ttf in Resources */,
+				30D64D6A253303C600B016EC /* OpenSans-BoldItalic.ttf in Resources */,
+				30D64D62253303C600B016EC /* OpenSans-Light.ttf in Resources */,
+				30D64D63253303C600B016EC /* OpenSans-Italic.ttf in Resources */,
+				30D64D68253303C600B016EC /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				304BEDCB2514F09000E36754 /* Assets.xcassets in Resources */,
-				304BEDC92514F08D00E36754 /* Main.storyboard in Resources */,
+				30D64D64253303C600B016EC /* OpenSans-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +211,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				304BEDC62514F08D00E36754 /* ViewController.swift in Sources */,
+				30D64D4F253300E900B016EC /* UIButton + Extension.swift in Sources */,
 				304BEDC22514F08D00E36754 /* AppDelegate.swift in Sources */,
+				302644902532EF2800AE0AF4 /* UIColor + Extension.swift in Sources */,
 				304BEDC42514F08D00E36754 /* SceneDelegate.swift in Sources */,
+				30D64D4A2532FF2B00B016EC /* StartPresentationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		304BEDC72514F08D00E36754 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				304BEDC82514F08D00E36754 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		304BEDCC2514F09000E36754 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
