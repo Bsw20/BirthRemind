@@ -10,6 +10,7 @@ import UIKit
 
 class StartPresentationViewController: UIViewController {
     let nextButton = UIButton(title: "Next")
+    let partyImageView = UIImageView(image: #imageLiteral(resourceName: "Party"))
 //    let nextButton = UIButton(type: .system)
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,12 +23,17 @@ class StartPresentationViewController: UIViewController {
 extension StartPresentationViewController {
     private func setupConstraints() {
         nextButton.translatesAutoresizingMaskIntoConstraints = false
+        partyImageView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(partyImageView)
         view.addSubview(nextButton)
         NSLayoutConstraint.activate([
             nextButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50),
             nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             nextButton.heightAnchor.constraint(equalToConstant: 45),
             nextButton.widthAnchor.constraint(equalToConstant: 149)
+        ])
+        
+        NSLayoutConstraint.activate([
         ])
         
     }
