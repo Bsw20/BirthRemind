@@ -34,6 +34,10 @@ extension StartPresentationViewController {
         ])
         
         NSLayoutConstraint.activate([
+            partyImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50),
+            partyImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            partyImageView.heightAnchor.constraint(equalToConstant: 45),
+            partyImageView.widthAnchor.constraint(equalToConstant: 149)
         ])
         
     }
