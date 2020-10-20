@@ -12,6 +12,7 @@
 		304BEDC42514F08D00E36754 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304BEDC32514F08D00E36754 /* SceneDelegate.swift */; };
 		304BEDCB2514F09000E36754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304BEDCA2514F09000E36754 /* Assets.xcassets */; };
 		304BEDCE2514F09000E36754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304BEDCC2514F09000E36754 /* LaunchScreen.storyboard */; };
+		306E37FD253816330057067B /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306E37FC253816330057067B /* UILabel + Extension.swift */; };
 		30D64D4A2532FF2B00B016EC /* StartPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D64D492532FF2B00B016EC /* StartPresentationViewController.swift */; };
 		30D64D4F253300E900B016EC /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D64D4E253300E900B016EC /* UIButton + Extension.swift */; };
 		30D64D61253303C600B016EC /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D57253303C600B016EC /* OpenSans-Semibold.ttf */; };
@@ -34,6 +35,7 @@
 		304BEDCA2514F09000E36754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		304BEDCD2514F09000E36754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		304BEDCF2514F09000E36754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		306E37FC253816330057067B /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
 		30D64D492532FF2B00B016EC /* StartPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StartPresentationViewController.swift; path = BirthRemind/Presentation/StartPresentationViewController.swift; sourceTree = SOURCE_ROOT; };
 		30D64D4E253300E900B016EC /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
 		30D64D57253303C600B016EC /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			children = (
 				3026448F2532EF2800AE0AF4 /* UIColor + Extension.swift */,
 				30D64D4E253300E900B016EC /* UIButton + Extension.swift */,
+				306E37FC253816330057067B /* UILabel + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306E37FD253816330057067B /* UILabel + Extension.swift in Sources */,
 				30D64D4F253300E900B016EC /* UIButton + Extension.swift in Sources */,
 				304BEDC22514F08D00E36754 /* AppDelegate.swift in Sources */,
 				302644902532EF2800AE0AF4 /* UIColor + Extension.swift in Sources */,
