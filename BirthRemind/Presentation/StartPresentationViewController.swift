@@ -12,8 +12,8 @@ class StartPresentationViewController: UIViewController {
     let nextButton = UIButton(title: "Next")
     let partyImageView = UIImageView(image: #imageLiteral(resourceName: "Party"))
     let rememberLabel = UILabel(text: "Remember everyone birthday",font: UIFont.systemFont(ofSize: 28), textColor: #colorLiteral(red: 0.6666666667, green: 0.6666666667, blue: 0.6666666667, alpha: 1))
-    let descriptionLabel = UILabel(text: "All holidays of your family, frieds are in one place!",
-                                   font: UIFont.systemFont(ofSize: 16),
+    let descriptionLabel = UILabel(text: "All holidays of your family, friends are in one place!",
+                                   font: UIFont.systemFont(ofSize: 17),
                                    textColor: .darkGray())
         
     override func viewDidLoad() {
@@ -59,14 +59,13 @@ extension StartPresentationViewController {
         
         NSLayoutConstraint.activate([
             rememberLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            rememberLabel.topAnchor.constraint(equalTo: partyImageView.bottomAnchor, constant: 50),
-            rememberLabel.widthAnchor.constraint(equalToConstant: view.frame.width * 0.7),
+            rememberLabel.topAnchor.constraint(equalTo: partyImageView.bottomAnchor, constant: 50)
         ])
     
         NSLayoutConstraint.activate([
             descriptionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            descriptionLabel.topAnchor.constraint(equalTo: rememberLabel.bottomAnchor, constant: 50),
-            rememberLabel.widthAnchor.constraint(equalToConstant: view.frame.width * 0.6)
+            descriptionLabel.topAnchor.constraint(equalTo: rememberLabel.bottomAnchor, constant: 80),
+            descriptionLabel.widthAnchor.constraint(equalToConstant: view.frame.width * 0.6)
         ])
 
         
