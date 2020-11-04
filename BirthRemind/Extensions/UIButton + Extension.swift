@@ -24,4 +24,17 @@ extension UIButton {
         print(font != nil ? "Ok" : "nil")
         
     }
+    
+    convenience init(hello: String) {
+        self.init(type: .system)
+    }
+    
+    func roundBorders(borderColor: UIColor, cornerRadius: CGFloat = 5, borderWidth: Int = 1) {
+        backgroundColor = .clear
+        layer.cornerRadius = cornerRadius
+        layer.borderWidth = 1
+        layer.borderColor = borderColor.cgColor
+        layer.masksToBounds = true
+    }
+    
 }

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,17 @@
 		304BEDC42514F08D00E36754 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304BEDC32514F08D00E36754 /* SceneDelegate.swift */; };
 		304BEDCB2514F09000E36754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304BEDCA2514F09000E36754 /* Assets.xcassets */; };
 		304BEDCE2514F09000E36754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304BEDCC2514F09000E36754 /* LaunchScreen.storyboard */; };
+		304E4CAC25500E4E00898D93 /* CustomPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E4CAB25500E4E00898D93 /* CustomPageControl.swift */; };
+		304E4CB12550706300898D93 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E4CB02550706300898D93 /* Router.swift */; };
+		304E4CB52551234C00898D93 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E4CB42551234C00898D93 /* AppCoordinator.swift */; };
+		304E4CB92551260D00898D93 /* MainFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E4CB82551260D00898D93 /* MainFlowCoordinator.swift */; };
+		304E4CBD2551262B00898D93 /* PresentationFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E4CBC2551262B00898D93 /* PresentationFlowCoordinator.swift */; };
+		304E4CC02551299200898D93 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E4CBF2551299200898D93 /* Coordinator.swift */; };
+		304E4CCA2551370100898D93 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E4CC92551370100898D93 /* Globals.swift */; };
+		304E4CCD2551411B00898D93 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E4CCC2551411B00898D93 /* TypeAliases.swift */; };
+		304E4CD02551489900898D93 /* BordersRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E4CCF2551489900898D93 /* BordersRoundedButton.swift */; };
+		304E4CD325514BD400898D93 /* ImportButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E4CD225514BD400898D93 /* ImportButton.swift */; };
+		304E4CDB25527B6B00898D93 /* FriendsPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E4CDA25527B6B00898D93 /* FriendsPresentationViewController.swift */; };
 		306E37FD253816330057067B /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306E37FC253816330057067B /* UILabel + Extension.swift */; };
 		30D64D4A2532FF2B00B016EC /* StartPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D64D492532FF2B00B016EC /* StartPresentationViewController.swift */; };
 		30D64D4F253300E900B016EC /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D64D4E253300E900B016EC /* UIButton + Extension.swift */; };
@@ -25,6 +36,8 @@
 		30D64D68253303C600B016EC /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D5E253303C600B016EC /* OpenSans-ExtraBoldItalic.ttf */; };
 		30D64D69253303C600B016EC /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D5F253303C600B016EC /* OpenSans-Regular.ttf */; };
 		30D64D6A253303C600B016EC /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D60253303C600B016EC /* OpenSans-BoldItalic.ttf */; };
+		30FD0A2A254FD566008D4F7F /* ImportPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FD0A29254FD566008D4F7F /* ImportPresentationViewController.swift */; };
+		70751B929340DF3E71208184 /* Pods_BirthRemind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4999848BA5F8545D5F6B0AB5 /* Pods_BirthRemind.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +48,17 @@
 		304BEDCA2514F09000E36754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		304BEDCD2514F09000E36754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		304BEDCF2514F09000E36754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		304E4CAB25500E4E00898D93 /* CustomPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageControl.swift; sourceTree = "<group>"; };
+		304E4CB02550706300898D93 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		304E4CB42551234C00898D93 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		304E4CB82551260D00898D93 /* MainFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowCoordinator.swift; sourceTree = "<group>"; };
+		304E4CBC2551262B00898D93 /* PresentationFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationFlowCoordinator.swift; sourceTree = "<group>"; };
+		304E4CBF2551299200898D93 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		304E4CC92551370100898D93 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		304E4CCC2551411B00898D93 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		304E4CCF2551489900898D93 /* BordersRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BordersRoundedButton.swift; sourceTree = "<group>"; };
+		304E4CD225514BD400898D93 /* ImportButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportButton.swift; sourceTree = "<group>"; };
+		304E4CDA25527B6B00898D93 /* FriendsPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPresentationViewController.swift; sourceTree = "<group>"; };
 		306E37FC253816330057067B /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
 		30D64D492532FF2B00B016EC /* StartPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StartPresentationViewController.swift; path = BirthRemind/Presentation/StartPresentationViewController.swift; sourceTree = SOURCE_ROOT; };
 		30D64D4E253300E900B016EC /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
@@ -48,6 +72,10 @@
 		30D64D5E253303C600B016EC /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		30D64D5F253303C600B016EC /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		30D64D60253303C600B016EC /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		30FD0A29254FD566008D4F7F /* ImportPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImportPresentationViewController.swift; path = BirthRemind/Presentation/ImportPresentationViewController.swift; sourceTree = SOURCE_ROOT; };
+		4999848BA5F8545D5F6B0AB5 /* Pods_BirthRemind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BirthRemind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A806389FE07197E9CF5EE09 /* Pods-BirthRemind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirthRemind.debug.xcconfig"; path = "Target Support Files/Pods-BirthRemind/Pods-BirthRemind.debug.xcconfig"; sourceTree = "<group>"; };
+		DBD9DFD537F95B01313B4A7E /* Pods-BirthRemind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirthRemind.release.xcconfig"; path = "Target Support Files/Pods-BirthRemind/Pods-BirthRemind.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70751B929340DF3E71208184 /* Pods_BirthRemind.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				30D64D492532FF2B00B016EC /* StartPresentationViewController.swift */,
+				30FD0A29254FD566008D4F7F /* ImportPresentationViewController.swift */,
+				304E4CDA25527B6B00898D93 /* FriendsPresentationViewController.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -84,6 +115,8 @@
 			children = (
 				304BEDC02514F08D00E36754 /* BirthRemind */,
 				304BEDBF2514F08D00E36754 /* Products */,
+				E6D788C85C355158D85BAADC /* Pods */,
+				DF4E3EE2756110F19C268653 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +131,8 @@
 		304BEDC02514F08D00E36754 /* BirthRemind */ = {
 			isa = PBXGroup;
 			children = (
+				304E4CAF2550705600898D93 /* Coordinators */,
+				304E4CC7255136F700898D93 /* Kit */,
 				30D64D55253303A400B016EC /* Fonts */,
 				304BEDC12514F08D00E36754 /* AppDelegate.swift */,
 				304BEDC32514F08D00E36754 /* SceneDelegate.swift */,
@@ -108,6 +143,54 @@
 				304BEDCF2514F09000E36754 /* Info.plist */,
 			);
 			path = BirthRemind;
+			sourceTree = "<group>";
+		};
+		304E4CAA25500E3800898D93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				304E4CAB25500E4E00898D93 /* CustomPageControl.swift */,
+				304E4CD525514BDA00898D93 /* Buttons */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		304E4CAF2550705600898D93 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				304E4CB7255125B600898D93 /* Flows */,
+				304E4CBF2551299200898D93 /* Coordinator.swift */,
+				304E4CB02550706300898D93 /* Router.swift */,
+				304E4CB42551234C00898D93 /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		304E4CB7255125B600898D93 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				304E4CBC2551262B00898D93 /* PresentationFlowCoordinator.swift */,
+				304E4CB82551260D00898D93 /* MainFlowCoordinator.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		304E4CC7255136F700898D93 /* Kit */ = {
+			isa = PBXGroup;
+			children = (
+				304E4CAA25500E3800898D93 /* Views */,
+				304E4CC92551370100898D93 /* Globals.swift */,
+				304E4CCC2551411B00898D93 /* TypeAliases.swift */,
+			);
+			path = Kit;
+			sourceTree = "<group>";
+		};
+		304E4CD525514BDA00898D93 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				304E4CCF2551489900898D93 /* BordersRoundedButton.swift */,
+				304E4CD225514BD400898D93 /* ImportButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		30D64D55253303A400B016EC /* Fonts */ = {
@@ -135,6 +218,23 @@
 			path = opensans;
 			sourceTree = "<group>";
 		};
+		DF4E3EE2756110F19C268653 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4999848BA5F8545D5F6B0AB5 /* Pods_BirthRemind.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6D788C85C355158D85BAADC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A806389FE07197E9CF5EE09 /* Pods-BirthRemind.debug.xcconfig */,
+				DBD9DFD537F95B01313B4A7E /* Pods-BirthRemind.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +242,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 304BEDD22514F09000E36754 /* Build configuration list for PBXNativeTarget "BirthRemind" */;
 			buildPhases = (
+				15109F35063A7832CD819C12 /* [CP] Check Pods Manifest.lock */,
 				304BEDBA2514F08D00E36754 /* Sources */,
 				304BEDBB2514F08D00E36754 /* Frameworks */,
 				304BEDBC2514F08D00E36754 /* Resources */,
+				B2363906F8AD18B453A4FC34 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -209,16 +311,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15109F35063A7832CD819C12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BirthRemind-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2363906F8AD18B453A4FC34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BirthRemind/Pods-BirthRemind-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BirthRemind/Pods-BirthRemind-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BirthRemind/Pods-BirthRemind-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		304BEDBA2514F08D00E36754 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30FD0A2A254FD566008D4F7F /* ImportPresentationViewController.swift in Sources */,
 				306E37FD253816330057067B /* UILabel + Extension.swift in Sources */,
+				304E4CC02551299200898D93 /* Coordinator.swift in Sources */,
+				304E4CDB25527B6B00898D93 /* FriendsPresentationViewController.swift in Sources */,
+				304E4CD02551489900898D93 /* BordersRoundedButton.swift in Sources */,
+				304E4CCD2551411B00898D93 /* TypeAliases.swift in Sources */,
+				304E4CB52551234C00898D93 /* AppCoordinator.swift in Sources */,
+				304E4CD325514BD400898D93 /* ImportButton.swift in Sources */,
 				30D64D4F253300E900B016EC /* UIButton + Extension.swift in Sources */,
+				304E4CBD2551262B00898D93 /* PresentationFlowCoordinator.swift in Sources */,
+				304E4CAC25500E4E00898D93 /* CustomPageControl.swift in Sources */,
+				304E4CB92551260D00898D93 /* MainFlowCoordinator.swift in Sources */,
+				304E4CB12550706300898D93 /* Router.swift in Sources */,
 				304BEDC22514F08D00E36754 /* AppDelegate.swift in Sources */,
 				302644902532EF2800AE0AF4 /* UIColor + Extension.swift in Sources */,
 				304BEDC42514F08D00E36754 /* SceneDelegate.swift in Sources */,
+				304E4CCA2551370100898D93 /* Globals.swift in Sources */,
 				30D64D4A2532FF2B00B016EC /* StartPresentationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +511,7 @@
 		};
 		304BEDD32514F09000E36754 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A806389FE07197E9CF5EE09 /* Pods-BirthRemind.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -374,6 +531,7 @@
 		};
 		304BEDD42514F09000E36754 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBD9DFD537F95B01313B4A7E /* Pods-BirthRemind.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Then
 
 class StartPresentationViewController: UIViewController {
     let nextButton = UIButton(title: "Next")
@@ -15,12 +16,19 @@ class StartPresentationViewController: UIViewController {
     let descriptionLabel = UILabel(text: "All holidays of your family, friends are in one place!",
                                    font: UIFont.systemFont(ofSize: 17),
                                    textColor: .darkGray())
+    
+    var pageControl = CustomPageControl(currentPage: 0)
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        Router.instance.navigationViewController.setNavigationBarHidden(true, animated: false)
         view.backgroundColor = .white
+        modalTransitionStyle = .flipHorizontal
         customizeElements()
         setupConstraints()
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
     
     private func customizeElements() {
@@ -28,27 +36,33 @@ class StartPresentationViewController: UIViewController {
         partyImageView.translatesAutoresizingMaskIntoConstraints = false
         rememberLabel.translatesAutoresizingMaskIntoConstraints = false
         descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
-        
+        pageControl.translatesAutoresizingMaskIntoConstraints = false
+
         rememberLabel.textAlignment = .center
         descriptionLabel.textAlignment = .center
+        
+        nextButton.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
+        
+    }
+    
+    @objc func nextButtonTapped() {
+        let importVC = ImportPresentationViewController()
+        Router.instance.setupAsBaseScreen(importVC, animated: true)
     }
 }
 
 //MARK: Constraints
 extension StartPresentationViewController {
     private func setupConstraints() {
-
+        
+        view.addSubview(pageControl)
         view.addSubview(partyImageView)
         view.addSubview(nextButton)
         view.addSubview(rememberLabel)
         view.addSubview(descriptionLabel)
+
         
-        NSLayoutConstraint.activate([
-            nextButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50),
-            nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            nextButton.heightAnchor.constraint(equalToConstant: 45),
-            nextButton.widthAnchor.constraint(equalToConstant: 149)
-        ])
+
         
         NSLayoutConstraint.activate([
             partyImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -56,17 +70,35 @@ extension StartPresentationViewController {
             partyImageView.heightAnchor.constraint(equalToConstant: 200),
             partyImageView.widthAnchor.constraint(equalToConstant: view.frame.width * 0.8)
         ])
-        
+
         NSLayoutConstraint.activate([
             rememberLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             rememberLabel.topAnchor.constraint(equalTo: partyImageView.bottomAnchor, constant: 50)
         ])
-    
+
         NSLayoutConstraint.activate([
             descriptionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             descriptionLabel.topAnchor.constraint(equalTo: rememberLabel.bottomAnchor, constant: 80),
             descriptionLabel.widthAnchor.constraint(equalToConstant: view.frame.width * 0.6)
         ])
+
+        NSLayoutConstraint.activate([
+            nextButton.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 190), //259
+            nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            nextButton.heightAnchor.constraint(equalToConstant: 50),
+            nextButton.widthAnchor.constraint(equalToConstant: view.frame.width * 0.42)
+        ])
+        
+        NSLayoutConstraint.activate([
+            pageControl.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30),
+            pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            pageControl.widthAnchor.constraint(equalToConstant: 150),
+            pageControl.heightAnchor.constraint(equalToConstant: 50)
+
+        ])
+        
+
+
 
         
     }
