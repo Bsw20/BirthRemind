@@ -13,6 +13,8 @@ class Router: NSObject {
     
     var navigationViewController: UINavigationController! {
         didSet {
+//            navigationViewController.navigationBar.barTintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0)
+//            navigationViewController.navigationBar.topItem?.title = "Check"
             navigationViewController.interactivePopGestureRecognizer?.delegate = self
             navigationViewController.delegate = self
         }

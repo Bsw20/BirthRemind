@@ -9,27 +9,30 @@ import Foundation
 import UIKit
 
 class ImportPresentationViewController: UIViewController {
-    let titleLabel = UILabel(text: "All holidays in one moment!",font: UIFont.systemFont(ofSize: 25), textColor: #colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1))
-    let descriptionLabel = UILabel(text: "If you have Vkontakte,then just import all your friends", font: UIFont.systemFont(ofSize: 16) )
+    let titleLabel = UILabel(text: "All holidays in one moment!", font: UIFont.openSansRegular(fontSize: 27), textColor: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
+    let descriptionLabel = UILabel(text: "If you have Vkontakte, then just import all your friends", font: UIFont.openSansRegular(fontSize: 18), textColor: #colorLiteral(red: 0.4274509804, green: 0.4274509804, blue: 0.4274509804, alpha: 1) )
 
     
-    let contactsButton = ImportButton(resourse: ImportResourse.Contacts)
-    let vkButton = ImportButton(resourse: ImportResourse.VK)
+    let contactsButton = ImportButton(type: .system)
+    let vkButton = ImportButton(type: .system)
     let policyButton = UIButton(type: .system)
     
     
-    let nextButton = UIButton(title: "Пропустить")
+    let nextButton = UIButton(title: "Skip", font: UIFont.openSansSemibold(fontSize: 18))
     var pageControl = CustomPageControl(currentPage: 1)
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        navigationController?.isNavigationBarHidden = true
         customizeElements()
         setupConstraints()
     }
     
     private func customizeElements() {
+        vkButton.configure(resourse: ImportResourse.VK)
+        contactsButton.configure(resourse: ImportResourse.Contacts)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         pageControl.translatesAutoresizingMaskIntoConstraints = false
         descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -66,14 +69,17 @@ class ImportPresentationViewController: UIViewController {
 extension ImportPresentationViewController {
     @objc func nextButtonTapped() {
         print(#function)
+        Router.instance.setupAsBaseScreen(FinishPresentationViewController(), animated: true)
     }
     
     @objc func contactsButtonTapped() {
         print(#function)
+        Router.instance.show(FriendsPresentationViewController())
     }
     
     @objc func vkButtonTapped() {
         print(#function)
+        Router.instance.show(FriendsPresentationViewController())
     }
     
     @objc func policyButtonTapped() {
@@ -84,6 +90,8 @@ extension ImportPresentationViewController {
 //MARK: Constraints
 extension ImportPresentationViewController {
     private func setupConstraints() {
+        let screenSize = UIScreen.main.bounds
+        
         view.addSubview(titleLabel)
         view.addSubview(pageControl)
         view.addSubview(descriptionLabel)
@@ -93,43 +101,7 @@ extension ImportPresentationViewController {
         view.addSubview(nextButton)
         
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
-            titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100)
-        ])
-        
-
-        
-        NSLayoutConstraint.activate([
-            descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 40),
-            descriptionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            descriptionLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100)
-        ])
-        
-        NSLayoutConstraint.activate([
-            contactsButton.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 40),
-            contactsButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            contactsButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 80),
-            contactsButton.heightAnchor.constraint(equalToConstant: 45)
-        ])
-        
-        NSLayoutConstraint.activate([
-            vkButton.topAnchor.constraint(equalTo: contactsButton.bottomAnchor, constant: 40),
-            vkButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            vkButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 80),
-            vkButton.heightAnchor.constraint(equalToConstant: 45)
-        ])
-        
-        
-        NSLayoutConstraint.activate([
-            policyButton.topAnchor.constraint(equalTo: vkButton.bottomAnchor, constant: 40),
-            policyButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            policyButton.widthAnchor.constraint(equalTo: vkButton.widthAnchor, multiplier: 0.6)
-            
-        ])
-        
-        NSLayoutConstraint.activate([
-            pageControl.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30),
+            pageControl.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -1 * screenSize.height * 0.03),
             pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             pageControl.widthAnchor.constraint(equalToConstant: 150),
             pageControl.heightAnchor.constraint(equalToConstant: 50)
@@ -137,11 +109,58 @@ extension ImportPresentationViewController {
         ])
         
         NSLayoutConstraint.activate([
-            nextButton.bottomAnchor.constraint(equalTo: pageControl.topAnchor, constant: -50),
             nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             nextButton.heightAnchor.constraint(equalToConstant: 50),
-            nextButton.widthAnchor.constraint(equalToConstant: view.frame.width * 0.42)
+            nextButton.widthAnchor.constraint(equalToConstant: view.frame.width * 0.42),
+            nextButton.bottomAnchor.constraint(equalTo: pageControl.topAnchor, constant: -1 * screenSize.height * 0.05)
         ])
+        
+
+        
+        NSLayoutConstraint.activate([
+            vkButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            vkButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 80),
+            vkButton.heightAnchor.constraint(equalToConstant: 45)
+        ])
+        
+        NSLayoutConstraint.activate([
+            policyButton.bottomAnchor.constraint(equalTo: nextButton.topAnchor, constant: -1 * screenSize.height * 0.14),
+            policyButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            policyButton.widthAnchor.constraint(equalTo: vkButton.widthAnchor, multiplier: 0.6)
+        ])
+        
+
+        NSLayoutConstraint.activate([
+            vkButton.bottomAnchor.constraint(equalTo: policyButton.topAnchor, constant: -10),
+        ])
+        
+        NSLayoutConstraint.activate([
+            contactsButton.bottomAnchor.constraint(equalTo: vkButton.topAnchor, constant: -15),
+            contactsButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            contactsButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 80),
+            contactsButton.heightAnchor.constraint(equalToConstant: 45)
+        ])
+        
+
+        NSLayoutConstraint.activate([
+            descriptionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            descriptionLabel.bottomAnchor.constraint(equalTo: contactsButton.topAnchor, constant: -1 * screenSize.height * 0.09),
+            descriptionLabel.widthAnchor.constraint(equalToConstant: view.frame.width * 0.5)
+        ])
+        
+        NSLayoutConstraint.activate([
+            titleLabel.bottomAnchor.constraint(equalTo: descriptionLabel.topAnchor, constant: -1 * screenSize.height * 0.03),
+            titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 100)
+        ])
+        
+        
+        
+
+        
+
+        
+
         
     }
 }

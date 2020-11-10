@@ -13,7 +13,7 @@ extension UIButton {
     convenience init(title: String,
                      titleColor: UIColor = .white,
                      backgroundColor: UIColor = .mainPurple(),
-                     font: UIFont? = UIFont(name: "OpenSans-Regular", size: 16),
+                     font: UIFont? = UIFont(name: "OpenSans-Regular", size: 18),
                      cornerRadius: CGFloat = 23) {
         self.init(type: .system)
         setTitle(title, for: .normal)

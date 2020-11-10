@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		302644902532EF2800AE0AF4 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3026448F2532EF2800AE0AF4 /* UIColor + Extension.swift */; };
+		303A71DB25530BED00B04321 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303A71DA25530BED00B04321 /* CheckBox.swift */; };
 		304BEDC22514F08D00E36754 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304BEDC12514F08D00E36754 /* AppDelegate.swift */; };
 		304BEDC42514F08D00E36754 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304BEDC32514F08D00E36754 /* SceneDelegate.swift */; };
 		304BEDCB2514F09000E36754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 304BEDCA2514F09000E36754 /* Assets.xcassets */; };
@@ -23,25 +24,28 @@
 		304E4CD02551489900898D93 /* BordersRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E4CCF2551489900898D93 /* BordersRoundedButton.swift */; };
 		304E4CD325514BD400898D93 /* ImportButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E4CD225514BD400898D93 /* ImportButton.swift */; };
 		304E4CDB25527B6B00898D93 /* FriendsPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E4CDA25527B6B00898D93 /* FriendsPresentationViewController.swift */; };
+		304E4CE02552921F00898D93 /* UINavigationBar + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E4CDF2552921F00898D93 /* UINavigationBar + Extension.swift */; };
+		304E4CE52552974000898D93 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E4CE42552974000898D93 /* ContactModel.swift */; };
+		304E4CEA2552A70E00898D93 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 304E4CE92552A70D00898D93 /* ContactCell.swift */; };
+		3051A1FC2553D0020099B926 /* ImportPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051A1FA2553D0010099B926 /* ImportPresentationViewController.swift */; };
+		3051A1FD2553D0020099B926 /* StartPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051A1FB2553D0020099B926 /* StartPresentationViewController.swift */; };
+		3051A2002553D0150099B926 /* FinishPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051A1FF2553D0150099B926 /* FinishPresentationViewController.swift */; };
+		3051A2042553D0780099B926 /* MainAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051A2032553D0780099B926 /* MainAppViewController.swift */; };
+		3051A20A2553DFD00099B926 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051A2092553DFD00099B926 /* Section.swift */; };
+		3051A20E2553F31D0099B926 /* ListOfContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051A20D2553F31D0099B926 /* ListOfContacts.swift */; };
+		3051A21225543DA90099B926 /* SectionHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051A21125543DA90099B926 /* SectionHeaderReusableView.swift */; };
+		3051A21F255529F70099B926 /* PopupCalendarContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051A21E255529F70099B926 /* PopupCalendarContainer.swift */; };
 		306E37FD253816330057067B /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306E37FC253816330057067B /* UILabel + Extension.swift */; };
-		30D64D4A2532FF2B00B016EC /* StartPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D64D492532FF2B00B016EC /* StartPresentationViewController.swift */; };
+		309041A725590B6D0042D295 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309041A625590B6D0042D295 /* UIFont + Extension.swift */; };
+		309041AC25590ECA0042D295 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 309041AB25590ECA0042D295 /* OpenSans-Regular.ttf */; };
+		309041B025590F0B0042D295 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 309041AF25590F0B0042D295 /* OpenSans-SemiBold.ttf */; };
 		30D64D4F253300E900B016EC /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D64D4E253300E900B016EC /* UIButton + Extension.swift */; };
-		30D64D61253303C600B016EC /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D57253303C600B016EC /* OpenSans-Semibold.ttf */; };
-		30D64D62253303C600B016EC /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D58253303C600B016EC /* OpenSans-Light.ttf */; };
-		30D64D63253303C600B016EC /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D59253303C600B016EC /* OpenSans-Italic.ttf */; };
-		30D64D64253303C600B016EC /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D5A253303C600B016EC /* OpenSans-ExtraBold.ttf */; };
-		30D64D65253303C600B016EC /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D5B253303C600B016EC /* OpenSans-LightItalic.ttf */; };
-		30D64D66253303C600B016EC /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D5C253303C600B016EC /* OpenSans-Bold.ttf */; };
-		30D64D67253303C600B016EC /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D5D253303C600B016EC /* OpenSans-SemiboldItalic.ttf */; };
-		30D64D68253303C600B016EC /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D5E253303C600B016EC /* OpenSans-ExtraBoldItalic.ttf */; };
-		30D64D69253303C600B016EC /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D5F253303C600B016EC /* OpenSans-Regular.ttf */; };
-		30D64D6A253303C600B016EC /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30D64D60253303C600B016EC /* OpenSans-BoldItalic.ttf */; };
-		30FD0A2A254FD566008D4F7F /* ImportPresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FD0A29254FD566008D4F7F /* ImportPresentationViewController.swift */; };
 		70751B929340DF3E71208184 /* Pods_BirthRemind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4999848BA5F8545D5F6B0AB5 /* Pods_BirthRemind.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3026448F2532EF2800AE0AF4 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		303A71DA25530BED00B04321 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		304BEDBE2514F08D00E36754 /* BirthRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirthRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		304BEDC12514F08D00E36754 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		304BEDC32514F08D00E36754 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,20 +63,22 @@
 		304E4CCF2551489900898D93 /* BordersRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BordersRoundedButton.swift; sourceTree = "<group>"; };
 		304E4CD225514BD400898D93 /* ImportButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportButton.swift; sourceTree = "<group>"; };
 		304E4CDA25527B6B00898D93 /* FriendsPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPresentationViewController.swift; sourceTree = "<group>"; };
+		304E4CDF2552921F00898D93 /* UINavigationBar + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar + Extension.swift"; sourceTree = "<group>"; };
+		304E4CE42552974000898D93 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		304E4CE92552A70D00898D93 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		3051A1FA2553D0010099B926 /* ImportPresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportPresentationViewController.swift; sourceTree = "<group>"; };
+		3051A1FB2553D0020099B926 /* StartPresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StartPresentationViewController.swift; path = BirthRemind/Controllers/Presentation/StartPresentationViewController.swift; sourceTree = SOURCE_ROOT; };
+		3051A1FF2553D0150099B926 /* FinishPresentationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FinishPresentationViewController.swift; path = BirthRemind/Controllers/Presentation/FinishPresentationViewController.swift; sourceTree = SOURCE_ROOT; };
+		3051A2032553D0780099B926 /* MainAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppViewController.swift; sourceTree = "<group>"; };
+		3051A2092553DFD00099B926 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		3051A20D2553F31D0099B926 /* ListOfContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfContacts.swift; sourceTree = "<group>"; };
+		3051A21125543DA90099B926 /* SectionHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderReusableView.swift; sourceTree = "<group>"; };
+		3051A21E255529F70099B926 /* PopupCalendarContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupCalendarContainer.swift; sourceTree = "<group>"; };
 		306E37FC253816330057067B /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
-		30D64D492532FF2B00B016EC /* StartPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StartPresentationViewController.swift; path = BirthRemind/Presentation/StartPresentationViewController.swift; sourceTree = SOURCE_ROOT; };
+		309041A625590B6D0042D295 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
+		309041AB25590ECA0042D295 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		309041AF25590F0B0042D295 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		30D64D4E253300E900B016EC /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
-		30D64D57253303C600B016EC /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
-		30D64D58253303C600B016EC /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
-		30D64D59253303C600B016EC /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
-		30D64D5A253303C600B016EC /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
-		30D64D5B253303C600B016EC /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
-		30D64D5C253303C600B016EC /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
-		30D64D5D253303C600B016EC /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
-		30D64D5E253303C600B016EC /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
-		30D64D5F253303C600B016EC /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
-		30D64D60253303C600B016EC /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
-		30FD0A29254FD566008D4F7F /* ImportPresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImportPresentationViewController.swift; path = BirthRemind/Presentation/ImportPresentationViewController.swift; sourceTree = SOURCE_ROOT; };
 		4999848BA5F8545D5F6B0AB5 /* Pods_BirthRemind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BirthRemind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A806389FE07197E9CF5EE09 /* Pods-BirthRemind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirthRemind.debug.xcconfig"; path = "Target Support Files/Pods-BirthRemind/Pods-BirthRemind.debug.xcconfig"; sourceTree = "<group>"; };
 		DBD9DFD537F95B01313B4A7E /* Pods-BirthRemind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirthRemind.release.xcconfig"; path = "Target Support Files/Pods-BirthRemind/Pods-BirthRemind.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,9 +99,10 @@
 		302644842532E9FE00AE0AF4 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				30D64D492532FF2B00B016EC /* StartPresentationViewController.swift */,
-				30FD0A29254FD566008D4F7F /* ImportPresentationViewController.swift */,
+				3051A1FB2553D0020099B926 /* StartPresentationViewController.swift */,
+				3051A1FA2553D0010099B926 /* ImportPresentationViewController.swift */,
 				304E4CDA25527B6B00898D93 /* FriendsPresentationViewController.swift */,
+				3051A1FF2553D0150099B926 /* FinishPresentationViewController.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -106,6 +113,8 @@
 				3026448F2532EF2800AE0AF4 /* UIColor + Extension.swift */,
 				30D64D4E253300E900B016EC /* UIButton + Extension.swift */,
 				306E37FC253816330057067B /* UILabel + Extension.swift */,
+				304E4CDF2552921F00898D93 /* UINavigationBar + Extension.swift */,
+				309041A625590B6D0042D295 /* UIFont + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -132,12 +141,13 @@
 			isa = PBXGroup;
 			children = (
 				304E4CAF2550705600898D93 /* Coordinators */,
+				304E4CE2255295CE00898D93 /* Models */,
 				304E4CC7255136F700898D93 /* Kit */,
 				30D64D55253303A400B016EC /* Fonts */,
+				3051A1F82553CF450099B926 /* Controllers */,
+				3026448E2532EED500AE0AF4 /* Extensions */,
 				304BEDC12514F08D00E36754 /* AppDelegate.swift */,
 				304BEDC32514F08D00E36754 /* SceneDelegate.swift */,
-				302644842532E9FE00AE0AF4 /* Presentation */,
-				3026448E2532EED500AE0AF4 /* Extensions */,
 				304BEDCA2514F09000E36754 /* Assets.xcassets */,
 				304BEDCC2514F09000E36754 /* LaunchScreen.storyboard */,
 				304BEDCF2514F09000E36754 /* Info.plist */,
@@ -177,6 +187,7 @@
 		304E4CC7255136F700898D93 /* Kit */ = {
 			isa = PBXGroup;
 			children = (
+				304E4CE82552A6F500898D93 /* Cells */,
 				304E4CAA25500E3800898D93 /* Views */,
 				304E4CC92551370100898D93 /* Globals.swift */,
 				304E4CCC2551411B00898D93 /* TypeAliases.swift */,
@@ -189,8 +200,54 @@
 			children = (
 				304E4CCF2551489900898D93 /* BordersRoundedButton.swift */,
 				304E4CD225514BD400898D93 /* ImportButton.swift */,
+				303A71DA25530BED00B04321 /* CheckBox.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		304E4CE2255295CE00898D93 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				304E4CE42552974000898D93 /* ContactModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		304E4CE82552A6F500898D93 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				304E4CE92552A70D00898D93 /* ContactCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3051A1F82553CF450099B926 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				302644842532E9FE00AE0AF4 /* Presentation */,
+				3051A2082553DF9B0099B926 /* Main */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3051A2082553DF9B0099B926 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3051A2032553D0780099B926 /* MainAppViewController.swift */,
+				3051A21C2555296F0099B926 /* Related views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3051A21C2555296F0099B926 /* Related views */ = {
+			isa = PBXGroup;
+			children = (
+				3051A2092553DFD00099B926 /* Section.swift */,
+				3051A20D2553F31D0099B926 /* ListOfContacts.swift */,
+				3051A21125543DA90099B926 /* SectionHeaderReusableView.swift */,
+				3051A21E255529F70099B926 /* PopupCalendarContainer.swift */,
+			);
+			path = "Related views";
 			sourceTree = "<group>";
 		};
 		30D64D55253303A400B016EC /* Fonts */ = {
@@ -204,16 +261,8 @@
 		30D64D56253303C600B016EC /* opensans */ = {
 			isa = PBXGroup;
 			children = (
-				30D64D57253303C600B016EC /* OpenSans-Semibold.ttf */,
-				30D64D58253303C600B016EC /* OpenSans-Light.ttf */,
-				30D64D59253303C600B016EC /* OpenSans-Italic.ttf */,
-				30D64D5A253303C600B016EC /* OpenSans-ExtraBold.ttf */,
-				30D64D5B253303C600B016EC /* OpenSans-LightItalic.ttf */,
-				30D64D5C253303C600B016EC /* OpenSans-Bold.ttf */,
-				30D64D5D253303C600B016EC /* OpenSans-SemiboldItalic.ttf */,
-				30D64D5E253303C600B016EC /* OpenSans-ExtraBoldItalic.ttf */,
-				30D64D5F253303C600B016EC /* OpenSans-Regular.ttf */,
-				30D64D60253303C600B016EC /* OpenSans-BoldItalic.ttf */,
+				309041AB25590ECA0042D295 /* OpenSans-Regular.ttf */,
+				309041AF25590F0B0042D295 /* OpenSans-SemiBold.ttf */,
 			);
 			path = opensans;
 			sourceTree = "<group>";
@@ -294,18 +343,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30D64D61253303C600B016EC /* OpenSans-Semibold.ttf in Resources */,
-				30D64D69253303C600B016EC /* OpenSans-Regular.ttf in Resources */,
-				30D64D67253303C600B016EC /* OpenSans-SemiboldItalic.ttf in Resources */,
+				309041B025590F0B0042D295 /* OpenSans-SemiBold.ttf in Resources */,
 				304BEDCE2514F09000E36754 /* LaunchScreen.storyboard in Resources */,
-				30D64D66253303C600B016EC /* OpenSans-Bold.ttf in Resources */,
-				30D64D65253303C600B016EC /* OpenSans-LightItalic.ttf in Resources */,
-				30D64D6A253303C600B016EC /* OpenSans-BoldItalic.ttf in Resources */,
-				30D64D62253303C600B016EC /* OpenSans-Light.ttf in Resources */,
-				30D64D63253303C600B016EC /* OpenSans-Italic.ttf in Resources */,
-				30D64D68253303C600B016EC /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				309041AC25590ECA0042D295 /* OpenSans-Regular.ttf in Resources */,
 				304BEDCB2514F09000E36754 /* Assets.xcassets in Resources */,
-				30D64D64253303C600B016EC /* OpenSans-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,24 +399,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30FD0A2A254FD566008D4F7F /* ImportPresentationViewController.swift in Sources */,
+				3051A20A2553DFD00099B926 /* Section.swift in Sources */,
+				3051A21225543DA90099B926 /* SectionHeaderReusableView.swift in Sources */,
 				306E37FD253816330057067B /* UILabel + Extension.swift in Sources */,
 				304E4CC02551299200898D93 /* Coordinator.swift in Sources */,
 				304E4CDB25527B6B00898D93 /* FriendsPresentationViewController.swift in Sources */,
 				304E4CD02551489900898D93 /* BordersRoundedButton.swift in Sources */,
 				304E4CCD2551411B00898D93 /* TypeAliases.swift in Sources */,
+				3051A2002553D0150099B926 /* FinishPresentationViewController.swift in Sources */,
+				3051A20E2553F31D0099B926 /* ListOfContacts.swift in Sources */,
 				304E4CB52551234C00898D93 /* AppCoordinator.swift in Sources */,
 				304E4CD325514BD400898D93 /* ImportButton.swift in Sources */,
 				30D64D4F253300E900B016EC /* UIButton + Extension.swift in Sources */,
 				304E4CBD2551262B00898D93 /* PresentationFlowCoordinator.swift in Sources */,
 				304E4CAC25500E4E00898D93 /* CustomPageControl.swift in Sources */,
 				304E4CB92551260D00898D93 /* MainFlowCoordinator.swift in Sources */,
+				304E4CEA2552A70E00898D93 /* ContactCell.swift in Sources */,
+				3051A21F255529F70099B926 /* PopupCalendarContainer.swift in Sources */,
 				304E4CB12550706300898D93 /* Router.swift in Sources */,
+				303A71DB25530BED00B04321 /* CheckBox.swift in Sources */,
 				304BEDC22514F08D00E36754 /* AppDelegate.swift in Sources */,
 				302644902532EF2800AE0AF4 /* UIColor + Extension.swift in Sources */,
+				309041A725590B6D0042D295 /* UIFont + Extension.swift in Sources */,
 				304BEDC42514F08D00E36754 /* SceneDelegate.swift in Sources */,
 				304E4CCA2551370100898D93 /* Globals.swift in Sources */,
-				30D64D4A2532FF2B00B016EC /* StartPresentationViewController.swift in Sources */,
+				3051A2042553D0780099B926 /* MainAppViewController.swift in Sources */,
+				304E4CE02552921F00898D93 /* UINavigationBar + Extension.swift in Sources */,
+				304E4CE52552974000898D93 /* ContactModel.swift in Sources */,
+				3051A1FC2553D0020099B926 /* ImportPresentationViewController.swift in Sources */,
+				3051A1FD2553D0020099B926 /* StartPresentationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

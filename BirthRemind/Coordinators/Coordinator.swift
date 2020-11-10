@@ -11,3 +11,9 @@ import UIKit
 protocol CoordinatorProtocol {
     func start()
 }
+
+protocol PresentationCoordinatorDelegate {
+    func didFinish(contacts: [ContactModel])
+}
+
+

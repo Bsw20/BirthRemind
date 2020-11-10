@@ -24,10 +24,12 @@ class CustomPageControl: UIPageControl {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-//    override func layoutSubviews() {
-//        super.layoutSubviews()
-//
-//    }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        print("layout subviews")
+    }
+    
+    
 //    var borderColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
 //
 //    override var currentPage: Int {

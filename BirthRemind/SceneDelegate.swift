@@ -25,6 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        window?.makeKeyAndVisible()
         appCoordinator = AppCoordinator(window: window!)
         appCoordinator.startPresentation()
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

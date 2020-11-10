@@ -8,4 +8,5 @@ target 'BirthRemind' do
   # Pods for BirthRemind
   pod 'Hero'
   pod 'Then'
+  pod 'FSCalendar'
 end

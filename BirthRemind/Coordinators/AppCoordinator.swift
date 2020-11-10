@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+
+
 class AppCoordinator {
     let contentWindow: UIWindow
     
@@ -20,4 +22,17 @@ class AppCoordinator {
         let presentationCoordinator = PresentationFlowCoordinator(window: contentWindow)
         presentationCoordinator.start()
     }
+    func startMain() {
+        let mainFlowCoordinator = MainFlowCoordinator(window: contentWindow)
+        mainFlowCoordinator.start()
+        
+    }
+}
+
+extension AppCoordinator: PresentationCoordinatorDelegate {
+    func didFinish(contacts: [ContactModel]) {
+        
+    }
+    
+    
 }

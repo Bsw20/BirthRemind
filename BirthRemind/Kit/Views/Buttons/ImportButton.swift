@@ -9,22 +9,34 @@ import Foundation
 import UIKit
 
 class ImportButton: UIButton {
+    //MARK - TODO: сделать блик как у системной кнопки
+    var iconImageView: UIImageView!
+    var textLabel: UILabel!
+//    init(resourse: ImportResourse) {
+//        iconImageView = UIImageView(image: resourse.resourseImage())
+//        iconImageView.tintColor = resourse.relatedColor()
+//        textLabel = UILabel(text: resourse.description(),font: UIFont.openSansSemibold(fontSize: 19), textColor: resourse.relatedColor())
+//        textLabel.textAlignment = .center
+////        textLabel.backgroundColor = .red
+//        super.init(frame: .zero)
+//        roundBorders(borderColor: resourse.relatedColor(),cornerRadius: 45/2, borderWidth: 1)
+//
+//        setupUI()
+//        setupConstraints()
+//    }
     
-    var iconImageView: UIImageView
-    var textLabel: UILabel
-    init(resourse: ImportResourse) {
+    public func configure(resourse: ImportResourse) {
         iconImageView = UIImageView(image: resourse.resourseImage())
-        textLabel = UILabel(text: resourse.description(), textColor: resourse.relatedColor())
-        super.init(frame: .zero)
+        iconImageView.tintColor = resourse.relatedColor()
+        textLabel = UILabel(text: resourse.description(),font: UIFont.openSansSemibold(fontSize: 19), textColor: resourse.relatedColor())
+        textLabel.textAlignment = .center
+//        textLabel.backgroundColor = .red
         roundBorders(borderColor: resourse.relatedColor(),cornerRadius: 45/2, borderWidth: 1)
         
         setupUI()
         setupConstraints()
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     private func setupUI() {
 
@@ -34,19 +46,19 @@ class ImportButton: UIButton {
     }
     
     private func setupConstraints() {
-        
+        let screenSize = UIScreen.main.bounds
         addSubview(iconImageView)
         addSubview(textLabel)
         
         NSLayoutConstraint.activate([
             iconImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
-            iconImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 13)
+            iconImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: screenSize.width * 0.06)
         ])
         
         NSLayoutConstraint.activate([
             textLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
-            textLabel.leadingAnchor.constraint(equalTo: iconImageView.trailingAnchor, constant: 15),
-            textLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 15)
+            textLabel.leadingAnchor.constraint(equalTo: iconImageView.trailingAnchor),
+            textLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -1 * screenSize.width * 0.02)
         ])
     }
 }

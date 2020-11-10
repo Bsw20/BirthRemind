@@ -10,11 +10,11 @@ import UIKit
 import Then
 
 class StartPresentationViewController: UIViewController {
-    let nextButton = UIButton(title: "Next")
+    let nextButton = UIButton(title: "Next",font: UIFont.openSansSemibold(fontSize: 18))
     let partyImageView = UIImageView(image: #imageLiteral(resourceName: "Party"))
-    let rememberLabel = UILabel(text: "Remember everyone birthday",font: UIFont.systemFont(ofSize: 28), textColor: #colorLiteral(red: 0.6666666667, green: 0.6666666667, blue: 0.6666666667, alpha: 1))
+    let rememberLabel = UILabel(text: "Remember everyone birthday",font: UIFont.openSansRegular(fontSize: 27), textColor: #colorLiteral(red: 0.6666666667, green: 0.6666666667, blue: 0.6666666667, alpha: 1))
     let descriptionLabel = UILabel(text: "All holidays of your family, friends are in one place!",
-                                   font: UIFont.systemFont(ofSize: 17),
+                                   font: UIFont.openSansRegular(fontSize: 18),
                                    textColor: .darkGray())
     
     var pageControl = CustomPageControl(currentPage: 0)
@@ -26,9 +26,6 @@ class StartPresentationViewController: UIViewController {
         modalTransitionStyle = .flipHorizontal
         customizeElements()
         setupConstraints()
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
     }
     
     private func customizeElements() {
@@ -43,6 +40,7 @@ class StartPresentationViewController: UIViewController {
         
         nextButton.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
         
+        
     }
     
     @objc func nextButtonTapped() {
@@ -51,9 +49,10 @@ class StartPresentationViewController: UIViewController {
     }
 }
 
-//MARK: Constraints
+//MARK: - Constraints
 extension StartPresentationViewController {
     private func setupConstraints() {
+        let screenSize = UIScreen.main.bounds
         
         view.addSubview(pageControl)
         view.addSubview(partyImageView)
@@ -66,41 +65,36 @@ extension StartPresentationViewController {
         
         NSLayoutConstraint.activate([
             partyImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            partyImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 80),
-            partyImageView.heightAnchor.constraint(equalToConstant: 200),
+            partyImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: screenSize.height * 0.1),
+            partyImageView.heightAnchor.constraint(equalToConstant: screenSize.height * 0.25),
             partyImageView.widthAnchor.constraint(equalToConstant: view.frame.width * 0.8)
-        ])
-
-        NSLayoutConstraint.activate([
-            rememberLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            rememberLabel.topAnchor.constraint(equalTo: partyImageView.bottomAnchor, constant: 50)
-        ])
-
-        NSLayoutConstraint.activate([
-            descriptionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            descriptionLabel.topAnchor.constraint(equalTo: rememberLabel.bottomAnchor, constant: 80),
-            descriptionLabel.widthAnchor.constraint(equalToConstant: view.frame.width * 0.6)
-        ])
-
-        NSLayoutConstraint.activate([
-            nextButton.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 190), //259
-            nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            nextButton.heightAnchor.constraint(equalToConstant: 50),
-            nextButton.widthAnchor.constraint(equalToConstant: view.frame.width * 0.42)
         ])
         
         NSLayoutConstraint.activate([
-            pageControl.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -30),
+            pageControl.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -15),
             pageControl.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             pageControl.widthAnchor.constraint(equalToConstant: 150),
             pageControl.heightAnchor.constraint(equalToConstant: 50)
 
         ])
         
-
-
-
+        NSLayoutConstraint.activate([
+            nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            nextButton.heightAnchor.constraint(equalToConstant: 50),
+            nextButton.widthAnchor.constraint(equalToConstant: view.frame.width * 0.42),
+            nextButton.bottomAnchor.constraint(equalTo: pageControl.topAnchor, constant: -30)
+        ])
         
+        NSLayoutConstraint.activate([
+            rememberLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            rememberLabel.topAnchor.constraint(equalTo: partyImageView.bottomAnchor, constant: 0.06 * screenSize.height),
+            rememberLabel.widthAnchor.constraint(equalTo: partyImageView.widthAnchor)
+        ])
+        NSLayoutConstraint.activate([
+            descriptionLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            descriptionLabel.topAnchor.constraint(equalTo: rememberLabel.bottomAnchor, constant: screenSize.height * 0.04),
+            descriptionLabel.widthAnchor.constraint(equalToConstant: view.frame.width * 0.5)
+        ])
     }
 }
 
